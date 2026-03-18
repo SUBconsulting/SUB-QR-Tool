@@ -18,7 +18,7 @@ GA_JS = f"""
 """
 
 # Configuración de la página
-st.set_page_config(page_title="Generador de QR Pro", page_icon="🚀")
+st.set_page_config(page_title="SUB | Generador de QR Pro", page_icon="🚀")
 
 # Esto inserta el script de forma invisible en la app
 components.html(GA_JS, height=1)
