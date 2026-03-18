@@ -18,7 +18,7 @@ GA_JS = f"""
 """
 
 # Esto inserta el script de forma invisible en la app
-components.html(GA_JS, height=0)
+components.html(GA_JS, height=1)
 
 
 # Configuración de la página
