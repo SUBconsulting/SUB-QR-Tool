@@ -1,7 +1,25 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import qrcode
 from io import BytesIO
 from PIL import Image
+
+#STUDIO SUB GA4
+GA_ID = "G-BB7W98MSTQ"
+
+GA_JS = f"""
+    <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){{dataLayer.push(arguments);}}
+        gtag('js', new Date());
+        gtag('config', '{GA_ID}');
+    </script>
+"""
+
+# Esto inserta el script de forma invisible en la app
+components.html(GA_JS, height=0)
+
 
 # Configuración de la página
 st.set_page_config(page_title="Generador de QR Pro", page_icon="🚀")
