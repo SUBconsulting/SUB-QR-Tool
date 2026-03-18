@@ -17,12 +17,11 @@ GA_JS = f"""
     </script>
 """
 
-# Esto inserta el script de forma invisible en la app
-components.html(GA_JS, height=1)
-
-
 # Configuración de la página
 st.set_page_config(page_title="Generador de QR Pro", page_icon="🚀")
+
+# Esto inserta el script de forma invisible en la app
+components.html(GA_JS, height=1)
 
 st.title("QR Generator 🗺️")
 st.write("Ingresa un link (como Google Maps) para generar tu código QR listo para descargar.")
